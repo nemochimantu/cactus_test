@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cactus Casino — Официальный сайт. Бонус +555FS +555% новым игрокам</title>
+    <meta name="description" content="Cactus казино — официальный сайт онлайн казино Кактус. Получите бездепозитный бонус +555 фриспинов и +555% на первый депозит. Играйте в Gates of Olympus, Sweet Bonanza и другие слоты.">
+    <meta name="keywords" content="cactus casino, cactus казино, cactus официальный сайт, кактус казино, cactus casino бонус, cactus бездепозитный бонус, cactus casino зеркало, онлайн казино кактус">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-primary: #070d07;
+            --bg-secondary: #0c140c;
+            --bg-card: #111a11;
+            --bg-card-hover: #162016;
+            --green-bright: #00e85a;
+            --green-neon: #39ff14;
+            --green-dark: #0a5c2a;
+            --green-mid: #1a8a45;
+            --gold: #ffd700;
+            --gold-dark: #b8960f;
+            --text-primary: #f0f5f0;
+            --text-secondary: #8fa88f;
+            --text-muted: #5a755a;
+            --border: #1a2e1a;
+            --border-light: #243824;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* ===== BACKGROUND EFFECTS ===== */
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(0, 232, 90, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 232, 90, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-glow-top {
+            position: fixed;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 600px;
+            background: radial-gradient(ellipse, rgba(0, 232, 90, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-glow-bottom {
+            position: fixed;
+            bottom: -300px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(ellipse, rgba(0, 232, 90, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 16px 24px;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(7, 13, 7, 0.92);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--green-bright), var(--green-dark));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            box-shadow: 0 0 20px rgba(0, 232, 90, 0.3);
+        }
+
+        .logo-text {
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .logo-text span {
+            color: var(--green-bright);
+        }
+
+        .header-btn {
+            background: linear-gradient(135deg, var(--green-bright), var(--green-mid));
+            color: #000;
+            border: none;
+            padding: 10px 28px;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 232, 90, 0.25);
+        }
+
+        .header-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 35px rgba(0, 232, 90, 0.45);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 24px 80px;
+            z-index: 1;
+        }
+
+        .hero-bg-pattern {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(0, 232, 90, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 232, 90, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 50% 80%, rgba(255, 215, 0, 0.04) 0%, transparent 40%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 232, 90, 0.1);
+            border: 1px solid rgba(0, 232, 90, 0.25);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--green-bright);
+            margin-bottom: 28px;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .hero-badge .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--green-bright);
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 232, 90, 0.5); }
+            50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(0, 232, 90, 0); }
+        }
+
+        .hero-h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(40px, 8vw, 80px);
+            font-weight: 700;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+            animation: fadeInUp 0.8s ease 0.1s forwards;
+            opacity: 0;
+        }
+
+        .hero-h1 .brand {
+            color: var(--green-bright);
+            text-shadow: 0 0 40px rgba(0, 232, 90, 0.3);
+        }
+
+        .hero-h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(16px, 3vw, 22px);
+            font-weight: 400;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+            opacity: 0;
+        }
+
+        .bonus-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 44px;
+            animation: fadeInUp 0.8s ease 0.3s forwards;
+            opacity: 0;
+        }
+
+        .bonus-item {
+            background: linear-gradient(135deg, rgba(0, 232, 90, 0.12), rgba(0, 232, 90, 0.04));
+            border: 1px solid rgba(0, 232, 90, 0.2);
+            border-radius: 16px;
+            padding: 20px 32px;
+            text-align: center;
+            min-width: 180px;
+            transition: all 0.3s ease;
+        }
+
+        .bonus-item:hover {
+            border-color: rgba(0, 232, 90, 0.5);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 232, 90, 0.15);
+        }
+
+        .bonus-value {
+            font-family: 'Oswald', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--green-bright);
+            line-height: 1.1;
+            text-shadow: 0 0 20px rgba(0, 232, 90, 0.3);
+        }
+
+        .bonus-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .bonus-divider {
+            font-family: 'Oswald', sans-serif;
+            font-size: 28px;
+            color: var(--text-muted);
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, var(--green-bright), #00cc4e);
+            color: #000;
+            border: none;
+            padding: 18px 52px;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 17px;
+            font-weight: 800;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 30px rgba(0, 232, 90, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+            animation: fadeInUp 0.8s ease 0.4s forwards, cta-glow 3s infinite 1.2s;
+            opacity: 0;
+            text-decoration: none;
+        }
+
+        @keyframes cta-glow {
+            0%, 100% { box-shadow: 0 0 30px rgba(0, 232, 90, 0.3), inset 0 1px 0 rgba(255,255,255,0.2); }
+            50% { box-shadow: 0 0 50px rgba(0, 232, 90, 0.5), inset 0 1px 0 rgba(255,255,255,0.2); }
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 0 60px rgba(0, 232, 90, 0.5);
+        }
+
+        .hero-subtext {
+            margin-top: 20px;
+            font-size: 13px;
+            color: var(--text-muted);
+            animation: fadeInUp 0.8s ease 0.5s forwards;
+            opacity: 0;
+        }
+
+        /* ===== FLOATING PARTICLES ===== */
+        .particles {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: var(--green-bright);
+            border-radius: 50%;
+            opacity: 0;
+            animation: float-particle linear infinite;
+        }
+
+        @keyframes float-particle {
+            0% { opacity: 0; transform: translateY(100vh) scale(0); }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.2; }
+            100% { opacity: 0; transform: translateY(-10vh) scale(1); }
+        }
+
+        /* ===== ADVANTAGES ===== */
+        .advantages {
+            position: relative;
+            z-index: 1;
+            padding: 60px 24px 80px;
+        }
+
+        .advantages-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--green-bright);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(28px, 5vw, 42px);
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 48px;
+            letter-spacing: -0.5px;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .adv-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px 20px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .adv-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--green-bright), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .adv-card:hover {
+            border-color: var(--border-light);
+            background: var(--bg-card-hover);
+            transform: translateY(-4px);
+        }
+
+        .adv-card:hover::before { opacity: 1; }
+
+        .adv-icon {
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 16px;
+            background: rgba(0, 232, 90, 0.08);
+            border: 1px solid rgba(0, 232, 90, 0.15);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--green-bright);
+            transition: all 0.3s ease;
+        }
+
+        .adv-card:hover .adv-icon {
+            background: rgba(0, 232, 90, 0.15);
+            box-shadow: 0 0 20px rgba(0, 232, 90, 0.15);
+        }
+
+        .adv-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+        }
+
+        .adv-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* ===== SLOTS ===== */
+        .slots {
+            position: relative;
+            z-index: 1;
+            padding: 40px 24px 100px;
+        }
+
+        .slots-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .slots-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+        }
+
+        .slot-card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            border: 1px solid var(--border);
+        }
+
+        .slot-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            border-color: rgba(0, 232, 90, 0.4);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 232, 90, 0.1);
+        }
+
+        .slot-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .slot-card:hover .slot-img {
+            transform: scale(1.08);
+        }
+
+        .slot-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .slot-card:hover .slot-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
+        }
+
+        .slot-name {
+            font-family: 'Oswald', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .slot-provider {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .slot-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 232, 90, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+            color: #000;
+        }
+
+        .slot-card:hover .slot-play {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .slot-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: var(--green-bright);
+            color: #000;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            position: relative;
+            z-index: 1;
+            padding: 0 24px 100px;
+        }
+
+        .cta-box {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(0, 232, 90, 0.08), rgba(0, 232, 90, 0.02));
+            border: 1px solid rgba(0, 232, 90, 0.15);
+            border-radius: 24px;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 20%;
+            right: 20%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--green-bright), transparent);
+        }
+
+        .cta-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(26px, 4vw, 38px);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .cta-title span {
+            color: var(--green-bright);
+        }
+
+        .cta-desc {
+            font-size: 16px;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: 0 auto 32px;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--green-bright), #00cc4e);
+            color: #000;
+            border: none;
+            padding: 16px 44px;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 30px rgba(0, 232, 90, 0.3);
+            text-decoration: none;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 50px rgba(0, 232, 90, 0.5);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            position: relative;
+            z-index: 1;
+            border-top: 1px solid var(--border);
+            padding: 40px 24px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-seo {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto 24px;
+            text-align: center;
+        }
+
+        .footer-seo a {
+            color: var(--green-bright);
+            text-decoration: none;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        .footer-seo a:hover { opacity: 1; }
+
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .footer-copy {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--green-bright); }
+
+        .footer-disclaimer {
+            text-align: center;
+            font-size: 11px;
+            color: var(--text-muted);
+            opacity: 0.5;
+            max-width: 700px;
+            margin: 20px auto 0;
+            line-height: 1.6;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .slots-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .slots-grid .slot-card:nth-child(4),
+            .slots-grid .slot-card:nth-child(5) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header { padding: 12px 16px; }
+            .logo-text { font-size: 20px; }
+            .logo-icon { width: 36px; height: 36px; font-size: 18px; }
+            .header-btn { padding: 8px 20px; font-size: 13px; }
+
+            .hero { padding: 100px 16px 60px; }
+            .bonus-block { gap: 12px; }
+            .bonus-item { padding: 16px 24px; min-width: 150px; }
+            .bonus-value { font-size: 34px; }
+            .bonus-divider { font-size: 22px; }
+            .hero-cta { padding: 16px 36px; font-size: 15px; }
+
+            .advantages-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .adv-card { padding: 24px 16px; }
+
+            .slots-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .slots-grid .slot-card:nth-child(4) { display: block; }
+            .slots-grid .slot-card:nth-child(5) { display: block; }
+
+            .cta-box { padding: 40px 24px; }
+        }
+
+        @media (max-width: 480px) {
+            .bonus-item { min-width: 130px; padding: 14px 18px; }
+            .bonus-value { font-size: 28px; }
+            .bonus-label { font-size: 11px; }
+            .advantages-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .slots-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .slot-name { font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Effects -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow-top"></div>
+    <div class="bg-glow-bottom"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">🌵</div>
+                <div class="logo-text">Cactus<span>Casino</span></div>
+            </a>
+            <button class="header-btn" onclick="scrollToCta()">Играть</button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Официальный сайт Cactus Casino
+            </div>
+            <h1 class="hero-h1">
+                <span class="brand">Cactus</span> Casino
+            </h1>
+            <p class="hero-h2">Онлайн казино Кактус — Играй и побеждай</p>
+            <div class="bonus-block">
+                <div class="bonus-item">
+                    <div class="bonus-value">+555FS</div>
+                    <div class="bonus-label">Фриспинов</div>
+                </div>
+                <div class="bonus-divider">+</div>
+                <div class="bonus-item">
+                    <div class="bonus-value">+555%</div>
+                    <div class="bonus-label">На депозит</div>
+                </div>
+            </div>
+            <a href="#" class="hero-cta" id="heroCta">
+                <i data-lucide="zap" style="width:20px;height:20px;"></i>
+                Зарегистрироваться
+            </a>
+            <p class="hero-subtext">Бонус доступен только новым игрокам Cactus Casino. 18+</p>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="advantages">
+        <div class="advantages-inner">
+            <div class="section-label reveal">Преимущества</div>
+            <h2 class="section-title reveal">Почему выбирают Cactus казино</h2>
+            <div class="advantages-grid">
+                <div class="adv-card reveal">
+                    <div class="adv-icon">
+                        <i data-lucide="clock" style="width:24px;height:24px;"></i>
+                    </div>
+                    <div class="adv-title">Быстрые выплаты</div>
+                    <div class="adv-desc">Моментальный вывод средств за несколько минут</div>
+                </div>
+                <div class="adv-card reveal">
+                    <div class="adv-icon">
+                        <i data-lucide="shield-check" style="width:24px;height:24px;"></i>
+                    </div>
+                    <div class="adv-title">Лицензия</div>
+                    <div class="adv-desc">Официальная лицензия и защита данных игроков</div>
+                </div>
+                <div class="adv-card reveal">
+                    <div class="adv-icon">
+                        <i data-lucide="gamepad-2" style="width:24px;height:24px;"></i>
+                    </div>
+                    <div class="adv-title">3000+ игр</div>
+                    <div class="adv-desc">Огромный выбор слотов, рулетки и live-казино</div>
+                </div>
+                <div class="adv-card reveal">
+                    <div class="adv-icon">
+                        <i data-lucide="headphones" style="width:24px;height:24px;"></i>
+                    </div>
+                    <div class="adv-title">Поддержка 24/7</div>
+                    <div class="adv-desc">Онлайн помощь в чате круглосуточно без выходных</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Slots -->
+    <section class="slots">
+        <div class="slots-inner">
+            <div class="section-label reveal">Популярные слоты</div>
+            <h2 class="section-title reveal">Лучшие игры в Cactus Casino</h2>
+            <div class="slots-grid">
+                <div class="slot-card reveal">
+                    <img src="https://picsum.photos/seed/olympus-gates/400/540.jpg" alt="Gates of Olympus — играть в Cactus Casino" class="slot-img" loading="lazy">
+                    <div class="slot-overlay">
+                        <div class="slot-name">Gates of Olympus</div>
+                        <div class="slot-provider">Pragmatic Play</div>
+                    </div>
+                    <div class="slot-play">
+                        <i data-lucide="play" style="width:22px;height:22px;fill:#000;stroke:none;"></i>
+                    </div>
+                    <div class="slot-badge">Хит</div>
+                </div>
+                <div class="slot-card reveal">
+                    <img src="https://picsum.photos/seed/doghouse-slot/400/540.jpg" alt="The Dog House — слот в Cactus казино" class="slot-img" loading="lazy">
+                    <div class="slot-overlay">
+                        <div class="slot-name">The Dog House</div>
+                        <div class="slot-provider">Pragmatic Play</div>
+                    </div>
+                    <div class="slot-play">
+                        <i data-lucide="play" style="width:22px;height:22px;fill:#000;stroke:none;"></i>
+                    </div>
+                </div>
+                <div class="slot-card reveal">
+                    <img src="https://picsum.photos/seed/mummyland-treasure/400/540.jpg" alt="Mummyland Treasures — онлайн казино Кактус" class="slot-img" loading="lazy">
+                    <div class="slot-overlay">
+                        <div class="slot-name">Mummyland Treasures</div>
+                        <div class="slot-provider">Belatra</div>
+                    </div>
+                    <div class="slot-play">
+                        <i data-lucide="play" style="width:22px;height:22px;fill:#000;stroke:none;"></i>
+                    </div>
+                    <div class="slot-badge">Новинка</div>
+                </div>
+                <div class="slot-card reveal">
+                    <img src="https://picsum.photos/seed/sweet-bonanza-candy/400/540.jpg" alt="Sweet Bonanza — Cactus casino бонус" class="slot-img" loading="lazy">
+                    <div class="slot-overlay">
+                        <div class="slot-name">Sweet Bonanza</div>
+                        <div class="slot-provider">Pragmatic Play</div>
+                    </div>
+                    <div class="slot-play">
+                        <i data-lucide="play" style="width:22px;height:22px;fill:#000;stroke:none;"></i>
+                    </div>
+                    <div class="slot-badge">Топ</div>
+                </div>
+                <div class="slot-card reveal">
+                    <img src="https://picsum.photos/seed/money-train-west/400/540.jpg" alt="The Money Train — Cactus casino зеркало" class="slot-img" loading="lazy">
+                    <div class="slot-overlay">
+                        <div class="slot-name">The Money Train</div>
+                        <div class="slot-provider">Relax Gaming</div>
+                    </div>
+                    <div class="slot-play">
+                        <i data-lucide="play" style="width:22px;height:22px;fill:#000;stroke:none;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="ctaSection">
+        <div class="cta-box reveal">
+            <div class="section-label">Cactus Casino бонус</div>
+            <h2 class="cta-title">Получите <span>+555FS</span> прямо сейчас</h2>
+            <p class="cta-desc">Зарегистрируйтесь на Cactus официальный сайт и заберите бездепозитный бонус для новых игроков</p>
+            <a href="#" class="cta-btn">
+                <i data-lucide="zap" style="width:18px;height:18px;"></i>
+                Забрать бонус
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-seo">
+                <strong>Cactus Casino</strong> — это <a href="#">онлайн казино Кактус</a>, которое предлагает игрокам широкий выбор слотов, щедрые бонусы и быстрый вывод средств.
+                На <a href="#">Cactus официальный сайт</a> вы найдёте более 3000 игр от ведущих провайдеров: Pragmatic Play, NetEnt, Relax Gaming, Belatra и других.
+                <a href="#">Cactus казино</a> работает по официальной лицензии, гарантируя безопасность и честность каждой игры.
+                Зарегистрируйтесь и получите <a href="#">Cactus бездепозитный бонус</a> — 555 фриспинов на популярные слоты.
+                Если вам нужен <a href="#">Cactus casino зеркало</a>, используйте актуальную ссылку на этой странице.
+                <a href="#">Cactus casino бонус</a> awaits — играйте в Gates of Olympus, Sweet Bonanza, The Dog House и выигрывайте в <a href="#">кактус казино</a> уже сегодня!
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copy">© 2025 Cactus Casino. Все права защищены.</div>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <a href="#">Ответственная игра</a>
+                </div>
+            </div>
+            <p class="footer-disclaimer">
+                Данный сайт носит информационный характер. Азартные игры могут вызывать зависимость. Играйте ответственно. Только для лиц старше 18 лет.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Scroll to CTA
+        function scrollToCta() {
+            document.getElementById('ctaSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Reveal on scroll
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 80);
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Floating particles
+        const particlesContainer = document.getElementById('particles');
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!prefersReduced) {
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDuration = (8 + Math.random() * 15) + 's';
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particle.style.width = (2 + Math.random() * 3) + 'px';
+                particle.style.height = particle.style.width;
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // CTA click handler (placeholder)
+        document.querySelectorAll('.hero-cta, .cta-btn, .header-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Replace with actual registration link
+            });
+        });
+    </script>
+</body>
+</html>
